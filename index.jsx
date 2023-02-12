@@ -1,6 +1,6 @@
 import React from "react";
 import ReactReconciler from "react-reconciler";
-import { DefaultEventPriority } from "react-reconciler/constants";
+// import { DefaultEventPriority } from "react-reconciler/constants";
 
 function cloneInstance(
     instance,
@@ -118,9 +118,9 @@ const reconciler = ReactReconciler({
     getInstanceFromScope() {
         throw new Error("getInstanceFromScope");
     },
-    getCurrentEventPriority() {
-        return DefaultEventPriority;
-    },
+    // getCurrentEventPriority() {
+    //     return DefaultEventPriority;
+    // },
     detachDeletedInstance() {
         return undefined;
     },
